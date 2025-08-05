@@ -28,7 +28,7 @@ A professional, scalable communication platform that seamlessly combines AI-powe
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd chatgpt-twilio-integration
+   cd twillio-gpt
    ```
 
 2. **Install dependencies**
