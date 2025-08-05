@@ -111,9 +111,9 @@ const ChatInterface: React.FC = () => {
       <div className="chat-header">
         <div className="chat-header-content">
           <div>
-            <h1>AI Assistant</h1>
+            <h1>AI Communication Hub</h1>
             <p className="chat-header-subtitle">
-              {activeTab === 'chat' ? 'Chat with ChatGPT' : 'Send SMS messages'}
+              {activeTab === 'chat' ? 'Intelligent AI Conversations' : 'Professional SMS Messaging'}
             </p>
           </div>
         </div>

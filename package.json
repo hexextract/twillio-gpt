@@ -1,7 +1,9 @@
 {
-  "name": "chatgpt-twilio-integration",
+  "name": "ai-communication-hub",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Enterprise-grade React application integrating OpenAI's ChatGPT with Twilio SMS services",
+  "author": "Iqbal Azeem <pingiqbal@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",
