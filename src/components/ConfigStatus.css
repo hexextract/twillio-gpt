@@ -1,0 +1,391 @@
+.config-status {
+  background: var(--warning-50);
+  border: 2px solid var(--warning-200);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding: 1.5rem 2rem;
+  margin: 0;
+  flex-shrink: 0;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.config-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.config-header h3 {
+  color: var(--warning-700);
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.config-header-icon {
+  font-size: 1.25rem;
+}
+
+.config-header p {
+  color: var(--warning-600);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.config-header code {
+  background: var(--warning-100);
+  color: var(--warning-800);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.config-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.config-item {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.config-item:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--gray-300);
+}
+
+.config-item.configured {
+  border-color: var(--success-300);
+  background: var(--success-50);
+}
+
+.config-item.configured:hover {
+  border-color: var(--success-400);
+}
+
+.config-item.missing {
+  border-color: var(--error-300);
+  background: var(--error-50);
+}
+
+.config-item.missing:hover {
+  border-color: var(--error-400);
+}
+
+.config-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.config-status-icon {
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.config-name {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--gray-900);
+}
+
+.config-item.configured .config-name {
+  color: var(--success-800);
+}
+
+.config-item.missing .config-name {
+  color: var(--error-800);
+}
+
+.config-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 2rem;
+}
+
+.config-key {
+  font-family: var(--font-mono);
+  background: var(--gray-100);
+  color: var(--gray-800);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  align-self: flex-start;
+  border: 1px solid var(--gray-200);
+}
+
+.config-item.configured .config-key {
+  background: var(--success-100);
+  color: var(--success-800);
+  border-color: var(--success-200);
+}
+
+.config-item.missing .config-key {
+  background: var(--error-100);
+  color: var(--error-800);
+  border-color: var(--error-200);
+}
+
+.config-description {
+  color: var(--gray-600);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.config-item.configured .config-description {
+  color: var(--success-700);
+}
+
+.config-item.missing .config-description {
+  color: var(--error-700);
+}
+
+.config-instructions {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.config-instructions h4 {
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.config-instructions-icon {
+  font-size: 1.125rem;
+}
+
+.config-instructions ol {
+  color: var(--gray-700);
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.config-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+.config-instructions code {
+  background: var(--gray-100);
+  color: var(--gray-800);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border: 1px solid var(--gray-200);
+}
+
+.config-links {
+  background: var(--primary-50);
+  border: 1px solid var(--primary-200);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.config-links p {
+  color: var(--primary-800);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.config-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.config-links li {
+  margin: 0;
+}
+
+.config-links a {
+  color: var(--primary-600);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  background: var(--primary-100);
+  border: 1px solid var(--primary-200);
+  transition: all 0.2s ease;
+}
+
+.config-links a:hover {
+  background: var(--primary-200);
+  border-color: var(--primary-300);
+  color: var(--primary-700);
+  text-decoration: none;
+}
+
+.config-link-icon {
+  font-size: 1rem;
+}
+
+/* Progress indicator */
+.config-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--gray-100);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-200);
+}
+
+.config-progress-bar {
+  flex: 1;
+  height: 0.5rem;
+  background: var(--gray-200);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.config-progress-fill {
+  height: 100%;
+  background: var(--primary-500);
+  transition: width 0.3s ease;
+}
+
+.config-progress-text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  white-space: nowrap;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .config-status {
+    padding: 1rem;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .config-items {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .config-item {
+    padding: 0.875rem;
+  }
+  
+  .config-details {
+    margin-left: 1.75rem;
+  }
+  
+  .config-instructions {
+    padding: 1rem;
+  }
+  
+  .config-links ul {
+    gap: 0.375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .config-status {
+    padding: 0.75rem;
+  }
+  
+  .config-header h3 {
+    font-size: 1rem;
+  }
+  
+  .config-header p {
+    font-size: 0.8125rem;
+  }
+  
+  .config-item {
+    padding: 0.75rem;
+  }
+  
+  .config-details {
+    margin-left: 1.5rem;
+  }
+  
+  .config-instructions {
+    padding: 0.875rem;
+  }
+  
+  .config-links a {
+    padding: 0.375rem 0.625rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .config-status {
+    background: var(--warning-900);
+    border-color: var(--warning-700);
+  }
+  
+  .config-item {
+    background: var(--gray-800);
+    border-color: var(--gray-700);
+  }
+  
+  .config-instructions,
+  .config-links {
+    background: var(--gray-800);
+    border-color: var(--gray-700);
+  }
+  
+  .config-key {
+    background: var(--gray-700);
+    color: var(--gray-200);
+    border-color: var(--gray-600);
+  }
+  
+  .config-instructions code {
+    background: var(--gray-700);
+    color: var(--gray-200);
+    border-color: var(--gray-600);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .config-item.configured {
+    border-color: var(--success-700);
+  }
+  
+  .config-item.missing {
+    border-color: var(--error-700);
+  }
+  
+  .config-links a {
+    border-color: var(--primary-700);
+  }
+}
